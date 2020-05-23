@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ecommerce-ux</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <style>
+        select{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: url(images/arrow-down.svg); background-repeat: no-repeat;
+            background-position:95%;
+            background-size: 1rem;
+            width: calc(15rem);
+            border-radius: 0;
+            padding: 1rem;
+            font-size: 1.5rem;
+        }
+        .price{
+            display: inline;
+            margin: 0 auto;
+        }
+        .filter{
+            font-size: 1.5rem;
+            padding: 1rem
+        }
+        .home-product{
+            display: flex;
+            flex-flow: row;
+            flex-wrap: wrap;
+            max-width: 140rem;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        .window-screen{
+            border: .3rem solid;
+            flex-basis: 30rem;
+            height: 40rem;
+            margin: 2rem 2rem 2rem 0rem;
+}
+
+        
+        .product-title{
+            background-color: rgba(0,0,0,0.8);
+            font-size: 2rem;
+            color: #ebebeb;
+            padding: 1rem;
+            text-align: center;
+        }
+        .description{
+            text-align: center;
+            color:#000;
+            font-size: 2rem;
+            margin: 3rem;
+        }
+        b{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .item-img{
+            width: 25rem;
+            display: block;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+        }
+        .sale-section{
+            
+            width: 100%;
+            margin: 3rem 0rem;
+            background-color: #cc3633;
+            height: 6.3rem;
+        }
+        .sale-section ul{
+           
+            padding: 1.8rem;
+        }
+        .sale-section ul li{
+            display: inline;
+        }
+        .sale-section ul li img{
+            height: 2rem;
+        }
+        .heart{
+
+            margin: 0 1rem 0 0;
+
+        }
+        .sale-section ul li:nth-child(1){
+           margin: -0.5% 44% 0 0;
+            font-size: 1.8rem;
+            padding: .5rem;
+            border: .1rem solid;
+        }
+        .sale-section ul li:nth-child(2){
+
+        }
+        .sale-section ul li:nth-child(3){
+
+        }
+        footer{
+            height: 30rem;
+            max-width: 140rem;
+            background-color: #333333;
+        }
+    </style>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="product">
+                    <div class="product-wrap right">
+                        <input id="serch" name="serch" class="search" type="text" placeholder="search">
+                        <button class="serch-button"></button>
+                        <img id="cart" src="images/cart.svg" alt="cart">
+                        <p class="item-counter">0 items</p>
+                    </div> 
+
+                    <div class="logo"><img src="images/logo.svg" alt=""></div>                                      
+                </div>
+                <nav class="deckstop">
+                    <ul>
+                        <li><a href="#">Product</a><ul>
+                            <li>product 1</li>
+                            <li>product 2</li>
+                            <li>product 3</li>
+                            <li>product 4</li>
+                            <li>product 5</li>
+                            </ul></li>
+                        <li><a href="#">New-release</a>
+                            <ul>
+                                <li>New-release 1</li>
+                                <li>New-release 2</li>
+                                <li>New-release 3</li>
+                                <li>New-release 4</li>
+                                <li>New-release 5</li>
+                            </ul></li>
+                        <li><a href="#">road-map</a>
+                            <ul>
+                                <li>road-map 1</li>
+                                <li>road-map 2</li>
+                                <li>road-map 3</li>
+
+
+                            </ul></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+            <di id="t"></di>
+            <section class="gallery">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="images/e-b1.jpg" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="images/e-b2.jpg" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="images/e-b3.jpg" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </section>
+
+
+
+            <div class="price">
+                <select name="price" id="min-price">
+                    <option value="min" selected>price from: min</option>
+                    <option value="1000">0</option>
+                    <option value="2000">$ 1,000</option>
+                    <option value="3000">$ 2,000</option>
+                    <option value="4000">$ 3,000</option>
+                    <option value="5000">$ 4,000</option>
+                    <option value="6000">$ 5,000</option>
+                    <option value="7000">$ 6,000</option>
+                    <option value="8000">$ 7,000</option>
+                    <option value="9000">$ 8,000</option>
+                    <option value="10000">$ 9,000</option>
+                </select> 
+                <select name="price" id="max-price"><option value="min" selected>price to: max</option>
+                    <option value="1000">$ 1,000</option>
+                    <option value="2000">$ 2,000</option>
+                    <option value="3000">$ 3,000</option>
+                    <option value="4000">$ 4,000</option>
+                    <option value="5000">$ 5,000</option>
+                    <option value="6000">$ 6,000</option>
+                    <option value="7000">$ 7,000</option>
+                    <option value="8000">$ 8,000</option>
+                    <option value="9000">$ 9,000</option>
+                    <option value="10000">$ 10,000</option></select> 
+                <button class="filter">view 22 e-bike</button>      
+            </div>
+            <main class="home-product">
+                <div class="window-screen">
+                    <h1 class="product-title">ON SALE</h1>
+                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
+                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
+                    <div class="sale-section">
+                        <ul>
+                            <li>$ 5,999</li>
+                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
+                            <li><img src="images/cart.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="window-screen">
+                     <h1 class="product-title">ON SALE</h1>
+                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
+                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
+                    <div class="sale-section">
+                        <ul>
+                            <li>$ 5,999</li>
+                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
+                            <li><img src="images/cart.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="window-screen">
+                     <h1 class="product-title">ON SALE</h1>
+                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
+                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
+                    <div class="sale-section">
+                        <ul>
+                            <li>$ 5,999</li>
+                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
+                            <li><img src="images/cart.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="window-screen">
+                     <h1 class="product-title">ON SALE</h1>
+                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
+                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
+                    <div class="sale-section">
+                        <ul>
+                            <li>$ 5,999</li>
+                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
+                            <li><img src="images/cart.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="window-screen">
+                     <h1 class="product-title">ON SALE</h1>
+                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
+                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
+                    <div class="sale-section">
+                        <ul>
+                            <li>$ 5,999</li>
+                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
+                            <li><img src="images/cart.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="window-screen">
+                     <h1 class="product-title">ON SALE</h1>
+                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
+                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
+                    <div class="sale-section">
+                        <ul>
+                            <li>$ 5,999</li>
+                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
+                            <li><img src="images/cart.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="window-screen">
+                     <h1 class="product-title">ON SALE</h1>
+                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
+                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
+                    <div class="sale-section">
+                        <ul>
+                            <li>$ 5,999</li>
+                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
+                            <li><img src="images/cart.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="window-screen"> <h1 class="product-title">ON SALE</h1>
+                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
+                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
+                    <div class="sale-section">
+                        <ul>
+                            <li>$ 5,999</li>
+                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
+                            <li><img src="images/cart.svg" alt=""></li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+            </main>
+        </div>
+        <footer>
+            
+        </footer>
+        <script>
+
+
+
+
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+            }
+        </script>
+    </body>
+</html>
+<!--
+
+to add: filters(to the right), reponsive navigation, list of products(on the left), footer> -->

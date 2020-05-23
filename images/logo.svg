@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#CCCCCC;stroke:#333333;stroke-width:23;stroke-miterlimit:10;}
+	.st2{fill:#CC3333;}
+	.st3{font-family:'DINAlternate-Bold';}
+	.st4{font-size:111.4145px;}
+	.st5{fill:none;stroke:#000000;stroke-width:1.1414;stroke-miterlimit:10;}
+	.st6{fill:#CCCCCC;}
+	.st7{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<path class="st0" d="M196.34,152.51H81.43c-12.93,0-23.48,8.59-23.48,19.31v153.43c0,10.71,10.55,19.31,23.48,19.31h105.78
+	c8.66,0,15.77-4.45,15.77-10.01v-6.77c0-5.56-7-10.01-15.77-10.01h-68.55c-8.66,0-15.77-4.45-15.77-10.01V274.1
+	c0-5.56,7-10.01,15.77-10.01h7.47v-26.68h-7.47c-8.66,0-15.77-4.45-15.77-10.01v-33.66c0-5.56,7-10.01,15.77-10.01h77.56
+	c8.66,0,15.77-4.45,15.77-10.01V162.4C212.12,156.96,205.12,152.51,196.34,152.51z"/>
+<rect x="44" y="260" class="st0" width="40" height="27"/>
+<circle class="st1" cx="250.77" cy="250.67" r="234.02"/>
+<circle class="st2" cx="250.77" cy="250.67" r="197.61"/>
+<text transform="matrix(1.0361 0 0 1 179.9297 292.3438)" class="st0 st3 st4">BIKE</text>
+<text transform="matrix(1.0361 0 0 1 179.9297 292.3438)" class="st5 st3 st4">BIKE</text>
+<path class="st6" d="M173.54,146.67H72.75c-11.34,0-20.59,8.84-20.59,19.87v157.88c0,11.02,9.26,19.87,20.59,19.87h92.77
+	c7.59,0,13.83-4.58,13.83-10.3v-6.97c0-5.72-6.14-10.3-13.83-10.3H105.4c-7.59,0-13.83-4.58-13.83-10.3v-34.63
+	c0-5.72,6.14-10.3,13.83-10.3h6.55v-27.46h-6.55c-7.59,0-13.83-4.58-13.83-10.3V189.1c0-5.72,6.14-10.3,13.83-10.3h68.02
+	c7.59,0,13.83-4.58,13.83-10.3v-11.65C187.37,151.24,181.23,146.67,173.54,146.67z"/>
+<path class="st7" d="M153.11,261.6c7.59,0,13.83-4.58,13.83-10.3v-6.97c0-5.72-6.14-10.3-13.83-10.3h-24.23v27.56h24.23V261.6z"/>
+</svg>

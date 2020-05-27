@@ -1,251 +1,299 @@
 @charset "UTF-8";
 /* CSS Document */
 @font-face {
-font-family: 'DIN Alternate Bold';
-font-style: normal;
-font-weight: normal;
-src: local('DIN Alternate Bold'), url('DINAlternate-Bold.woff') format('woff');
+    font-family: 'DIN Alternate Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DIN Alternate Bold'), url('DINAlternate-Bold.woff') format('woff');
 }
-        *{
-            font-family: 'Helvetica', sans-serif;
-            font-size: 10px;
-            margin:0;
-            padding: 0;
-            box-sizing: border-box
-        }
-        .wrapper{
+*{
+    font-family: 'Helvetica', sans-serif;
+    font-size: 10px;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box
+}
+.wrapper{
 
-            max-width: 140rem;
-            margin: 0 auto;
-        }
-        header{
-            
-            width: 100%;
-            
-            
-        }
+    max-width: 140rem;
+    margin: 0 auto;
+}
+header{
 
-        .product{
-            background-color: #cc3633;
-            padding: 2rem;
-            height: 6.5rem;
-        }
-        .product-wrap{
-            display: flex;
-            flex-direction: row;
-        }
-        #cart{
-            height: 2rem;
-        }
-        .item-counter{
-            font-size: 2rem;
-        }
-        #serch{
-            font-size: 1.5rem;
-        }
-        #cart, .item-counter, .serch-button {
-            margin-right: 1rem;
-        }
-        .serch-button{
-           background-image: url(../images/src.svg);
-            width: 2rem;
-            height: 2.5rem;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-        .right{
-            float: right;
-        }
+    width: 100%;
 
-        .logo img{
-            height: 15rem;
-            position: absolute;
-            z-index: 1001;
-        }
 
-        nav.deckstop{
-            background-color: #333333;
-            width: 100%;
+}
 
-        }
-        .deckstop ul{
-            width: 50%;
-            margin: 0 auto;
-            text-align: center;
-            padding: 1rem;
+.product{
+    background-color: #cccccc;
+    padding: 2rem;
+    height: 6.5rem;
+}
+.product-wrap{
+    display: flex;
+    flex-direction: row;
+}
+#cart{
+    height: 2rem;
+}
+.item-counter{
+    font-size: 2rem;
+}
+#serch{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+#cart, .item-counter, .serch-button {
+    margin-right: 1rem;
+}
+.serch-button{
+    background-image: url(../images/src.svg);
+    width: 2rem;
+    height: 2.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right{
+    float: right;
+}
 
-        }
-        .deckstop ul li{
-            display: inline;
-            margin-right: 1rem;
-            border-right: .2rem solid;
-            color: #ebebeb;
-            padding-right: 1rem;
-            font-size: 2rem;
-        }
-        .deckstop ul li a{
-            text-decoration: none;
-            font-size: 2rem;
-            color: #ebebeb;
-        }
-        .deckstop ul li ul {
-            visibility: hidden;
-            opacity: 0;
-            position: absolute;
-            -webkit-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-            margin-top: 2rem;
-            display: none;
-            margin: auto;
-            left: 0;
-            right: 0;
-            padding: 3rem;
-            background-color: #333333;
-            z-index: 101;
-        }
+.logo img{
 
-        .deckstop ul li:hover > ul,
-        .deckstop ul li ul:hover {
-            visibility: visible;
-            opacity: 1;
-            display: block;
-        }
+    height: 8rem;
+    position: absolute;
+    z-index: 1001;
+    margin: 3.3rem 0rem;
 
-        .deckstop ul li ul li {
-            clear: both;
-            width: 100%;
-            font-size: 1.5rem;
-        }
+}
+@media only screen and (min-width: 900px){
+    .logo img{
+        height: 10rem;
+        position: absolute;
+        z-index: 1001;
+        margin: 2.3rem;
+    }
+}
+.phone{
+    display: inherit;
+    padding: 1.66rem;
+}
 
-       
-        .gallery{
-          
-            margin: 8rem 0rem;
-            
-        }
-        
-        .title-article{
-            color: orangered;
-            font-size: 2rem;
-          
-        }
-        .sub-title{
-            color: dimgrey;
-            font-size: 1.8rem;
-            
-            
-        }
-        
-        .sub-title ~ p{
-            color: #000;
-            font-size: 1.5rem;
-            
-        }
-        main .content{
-            width: 100%;
-            display: flex;
-            flex-flow: row;
-            flex-wrap: wrap;
-            justify-content: center;
-           
-        }
-        
-        .product-item{
-            flex-basis: 20rem;
-            height: 20rem;
-            border: 2px solid grey;
-        }
-        * {box-sizing:border-box}
+.phone ul{
+    float: right;
+    
+}
+
+.phone ul li{
+    height: .4rem;
+    width: 3rem;
+    background-color: white;
+    list-style: none;
+}
+.phone ul li:nth-child(2){
+    margin: .5rem 0 .5rem 0;
+}
+
+.desktop, .phone{
+    background-color: #333333;
+    width: 100%;
+    height: 5.5rem;
+
+
+
+}
+.desktop{
+    display: none;
+    padding: .8rem;
+
+}
+.desktop ul{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+
+}
+.desktop ul li{
+    display: inline;
+    margin-right: 1rem;
+    border-right: .2rem solid;
+    padding-right: 1rem;
+    font-size: 2rem;
+}
+.desktop ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #ffffff;
+}
+.desktop ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: 2rem;
+    display: none;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 3rem;
+    background-color: #333333;
+    z-index: 101;
+}
+
+.desktop ul li:hover > ul,
+.desktop ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+.desktop ul li ul li {
+    clear: both;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 900px){
+    nav.desktop{
+        display: inherit;
+    }
+}
+
+@media only screen and (min-width: 900px){
+    nav.phone{
+        display: none;
+    }
+}
+.gallery{
+
+    margin: 8rem 0rem;
+
+}
+
+.title-article{
+    color: orangered;
+    font-size: 2rem;
+
+}
+.sub-title{
+    color: dimgrey;
+    font-size: 1.8rem;
+
+
+}
+
+.sub-title ~ p{
+    color: #000;
+    font-size: 1.5rem;
+
+}
+main .content{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.product-item{
+    flex-basis: 20rem;
+    height: 20rem;
+    border: 2px solid grey;
+}
+* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+    display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 1.5rem;
-  color: grey;
-  font-weight: bold;
-  font-size: 2rem;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 1.5rem;
+    color: grey;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+    background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+    from {opacity: .4}
+    to {opacity: 1}
 }

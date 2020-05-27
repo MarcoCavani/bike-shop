@@ -19,87 +19,70 @@
             padding: 1rem;
             font-size: 1.5rem;
         }
-        .price{
-            display: inline;
-            margin: 0 auto;
-        }
+        
         .filter{
             font-size: 1.5rem;
             padding: 1rem
         }
-        .home-product{
+        main{
             display: flex;
-            flex-flow: row;
+            flex-direction: row;
             flex-wrap: wrap;
-            max-width: 140rem;
-            margin: 0 auto;
-            justify-content: space-between;
-        }
-        .window-screen{
-            border: .3rem solid;
-            flex-basis: 30rem;
-            height: 40rem;
-            margin: 2rem 2rem 2rem 0rem;
-}
-
-        
-        .product-title{
-            background-color: rgba(0,0,0,0.8);
-            font-size: 2rem;
-            color: #ebebeb;
-            padding: 1rem;
-            text-align: center;
-        }
-        .description{
-            text-align: center;
-            color:#000;
-            font-size: 2rem;
-            margin: 3rem;
-        }
-        b{
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .item-img{
-            width: 25rem;
-            display: block;
-            margin: 0 auto;
-            margin-top: 1rem;
-            margin-bottom: 4rem;
-        }
-        .sale-section{
-            
+            justify-content: center;
             width: 100%;
-            margin: 3rem 0rem;
-            background-color: #cc3633;
-            height: 6.3rem;
         }
-        .sale-section ul{
+        #items{
+            display: flex;
+            flex-direction: column;
+            width: 20rem;
            
-            padding: 1.8rem;
+            margin:2rem;
         }
-        .sale-section ul li{
-            display: inline;
+        
+        .on-sale{
+            height: 4rem;
+            width: 100%;
+            background-color: #000;
         }
-        .sale-section ul li img{
-            height: 2rem;
+        .on-sale h2{
+            color:#ebebeb;
+            text-align: center;
+            font-size: 2rem;
+            line-height: 4rem;
+            
         }
-        .heart{
-
-            margin: 0 1rem 0 0;
-
+        #items .item-body{
+            height: calc(100% - 35rem);
+            width: 100%;
+            height: 15rem;
         }
-        .sale-section ul li:nth-child(1){
-           margin: -0.5% 44% 0 0;
-            font-size: 1.8rem;
+        .product-name{
             padding: .5rem;
-            border: .1rem solid;
+            text-align: center;
+            font-size: 2rem;
         }
-        .sale-section ul li:nth-child(2){
 
+      .sale-action{
+           height: 4rem;
+            background: #ffff33;
+          padding: .8rem;
         }
-        .sale-section ul li:nth-child(3){
-
+        .price, .icon-sale{
+            
+        }
+        .price{
+            float: left;
+            font-size: 1.8rem;
+            border: 1px solid #000;
+            
+        }
+        .icon-sale{
+            float: right;
+        }
+        .icon-sale img{
+            height: 2rem;
+            width: 2rem;
+            margin-left: 1rem;
         }
         footer{
             height: 30rem;
@@ -120,7 +103,14 @@
 
                     <div class="logo"><img src="images/logo.svg" alt=""></div>                                      
                 </div>
-                <nav class="deckstop">
+                <nav class="phone">
+                    <ul class="hamburger">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </nav>
+                <nav class="desktop">
                     <ul>
                         <li><a href="#">Product</a><ul>
                             <li>product 1</li>
@@ -159,19 +149,19 @@
                     <div class="mySlides fade">
                         <div class="numbertext">1 / 3</div>
                         <img src="images/e-b1.jpg" style="width:100%">
-                        <div class="text">Caption Text</div>
+                        
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">2 / 3</div>
                         <img src="images/e-b2.jpg" style="width:100%">
-                        <div class="text">Caption Two</div>
+                        
                     </div>
 
                     <div class="mySlides fade">
                         <div class="numbertext">3 / 3</div>
                         <img src="images/e-b3.jpg" style="width:100%">
-                        <div class="text">Caption Three</div>
+                        
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -193,16 +183,16 @@
             <div class="price">
                 <select name="price" id="min-price">
                     <option value="min" selected>price from: min</option>
-                    <option value="1000">0</option>
-                    <option value="2000">$ 1,000</option>
-                    <option value="3000">$ 2,000</option>
-                    <option value="4000">$ 3,000</option>
-                    <option value="5000">$ 4,000</option>
-                    <option value="6000">$ 5,000</option>
-                    <option value="7000">$ 6,000</option>
-                    <option value="8000">$ 7,000</option>
-                    <option value="9000">$ 8,000</option>
-                    <option value="10000">$ 9,000</option>
+
+                    <option value="1000">$ 1,000</option>
+                    <option value="2000">$ 2,000</option>
+                    <option value="3000">$ 3,000</option>
+                    <option value="4000">$ 4,000</option>
+                    <option value="5000">$ 5,000</option>
+                    <option value="6000">$ 6,000</option>
+                    <option value="7000">$ 7,000</option>
+                    <option value="8000">$ 8,000</option>
+                    <option value="90000">$ 9,000</option>
                 </select> 
                 <select name="price" id="max-price"><option value="min" selected>price to: max</option>
                     <option value="1000">$ 1,000</option>
@@ -217,115 +207,179 @@
                     <option value="10000">$ 10,000</option></select> 
                 <button class="filter">view 22 e-bike</button>      
             </div>
-            <main class="home-product">
-                <div class="window-screen">
-                    <h1 class="product-title">ON SALE</h1>
-                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
-                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
-                    <div class="sale-section">
-                        <ul>
-                            <li>$ 5,999</li>
-                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
-                            <li><img src="images/cart.svg" alt=""></li>
-                        </ul>
 
-                    </div>
-                </div>
-                <div class="window-screen">
-                     <h1 class="product-title">ON SALE</h1>
-                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
-                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
-                    <div class="sale-section">
-                        <ul>
-                            <li>$ 5,999</li>
-                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
-                            <li><img src="images/cart.svg" alt=""></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="window-screen">
-                     <h1 class="product-title">ON SALE</h1>
-                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
-                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
-                    <div class="sale-section">
-                        <ul>
-                            <li>$ 5,999</li>
-                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
-                            <li><img src="images/cart.svg" alt=""></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="window-screen">
-                     <h1 class="product-title">ON SALE</h1>
-                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
-                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
-                    <div class="sale-section">
-                        <ul>
-                            <li>$ 5,999</li>
-                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
-                            <li><img src="images/cart.svg" alt=""></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="window-screen">
-                     <h1 class="product-title">ON SALE</h1>
-                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
-                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
-                    <div class="sale-section">
-                        <ul>
-                            <li>$ 5,999</li>
-                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
-                            <li><img src="images/cart.svg" alt=""></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="window-screen">
-                     <h1 class="product-title">ON SALE</h1>
-                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
-                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
-                    <div class="sale-section">
-                        <ul>
-                            <li>$ 5,999</li>
-                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
-                            <li><img src="images/cart.svg" alt=""></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="window-screen">
-                     <h1 class="product-title">ON SALE</h1>
-                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
-                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
-                    <div class="sale-section">
-                        <ul>
-                            <li>$ 5,999</li>
-                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
-                            <li><img src="images/cart.svg" alt=""></li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="window-screen"> <h1 class="product-title">ON SALE</h1>
-                    <h2 class="description"><b>E-BIKE</b> <br> Colnago 4000w </h2>
-                    <img class="item-img" src="images/item1.jpg" alt="colnago e-bike">
-                    <div class="sale-section">
-                        <ul>
-                            <li>$ 5,999</li>
-                            <li><img class="heart" src="images/hart-gray.svg" alt="heart"></li>
-                            <li><img src="images/cart.svg" alt=""></li>
-                        </ul>
-
-                    </div>
-                    
-                </div>
-            </main>
         </div>
-        <footer>
+        <main>
             
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+            <div id="items">
+                <div class="on-sale">
+                    <h2>ON SALE</h2>
+                </div>
+                <h3 class="product-name">
+                    Colnago 4000w <br> s-line sport
+                </h3>
+                <img src="images/item1.svg" alt="e-bike" class="item-body">
+                <div class="sale-action">
+                    <div class="price">$ 5,999</div>
+                    <div class="icon-sale">
+                        <img src="images/hart-gray.svg" alt="wishlist icon"><img src="images/cart.svg" alt="cart">
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+
         </footer>
         <script>
 

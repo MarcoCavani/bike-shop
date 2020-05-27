@@ -3,27 +3,43 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:#FFFFFF;}
-	.st1{fill:#CCCCCC;stroke:#333333;stroke-width:23;stroke-miterlimit:10;}
-	.st2{fill:#CC3333;}
-	.st3{font-family:'DINAlternate-Bold';}
-	.st4{font-size:111.4145px;}
-	.st5{fill:none;stroke:#000000;stroke-width:1.1414;stroke-miterlimit:10;}
+	.st0{fill:#CCCCCC;stroke:#333333;stroke-width:8;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#FFFF33;stroke:#333333;stroke-width:8;stroke-miterlimit:10;}
+	.st3{fill:#333333;}
+	.st4{font-family:'Helvetica-Bold';}
+	.st5{font-size:99.6727px;}
 	.st6{fill:#CCCCCC;}
-	.st7{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+	.st7{fill:#666666;}
+	.st8{font-size:53.826px;}
+	.st9{fill:#333333;stroke:#CCCCCC;stroke-width:8;stroke-miterlimit:10;}
 </style>
-<path class="st0" d="M196.34,152.51H81.43c-12.93,0-23.48,8.59-23.48,19.31v153.43c0,10.71,10.55,19.31,23.48,19.31h105.78
+<circle class="st0" cx="250.77" cy="250.67" r="234.02"/>
+<path class="st1" d="M196.34,152.51H81.43c-12.93,0-23.48,8.59-23.48,19.31v153.43c0,10.71,10.55,19.31,23.48,19.31h105.78
 	c8.66,0,15.77-4.45,15.77-10.01v-6.77c0-5.56-7-10.01-15.77-10.01h-68.55c-8.66,0-15.77-4.45-15.77-10.01V274.1
 	c0-5.56,7-10.01,15.77-10.01h7.47v-26.68h-7.47c-8.66,0-15.77-4.45-15.77-10.01v-33.66c0-5.56,7-10.01,15.77-10.01h77.56
 	c8.66,0,15.77-4.45,15.77-10.01V162.4C212.12,156.96,205.12,152.51,196.34,152.51z"/>
-<rect x="44" y="260" class="st0" width="40" height="27"/>
-<circle class="st1" cx="250.77" cy="250.67" r="234.02"/>
+<rect x="44" y="260" class="st1" width="40" height="27"/>
 <circle class="st2" cx="250.77" cy="250.67" r="197.61"/>
-<text transform="matrix(1.0361 0 0 1 179.9297 292.3438)" class="st0 st3 st4">BIKE</text>
-<text transform="matrix(1.0361 0 0 1 179.9297 292.3438)" class="st5 st3 st4">BIKE</text>
-<path class="st6" d="M173.54,146.67H72.75c-11.34,0-20.59,8.84-20.59,19.87v157.88c0,11.02,9.26,19.87,20.59,19.87h92.77
-	c7.59,0,13.83-4.58,13.83-10.3v-6.97c0-5.72-6.14-10.3-13.83-10.3H105.4c-7.59,0-13.83-4.58-13.83-10.3v-34.63
-	c0-5.72,6.14-10.3,13.83-10.3h6.55v-27.46h-6.55c-7.59,0-13.83-4.58-13.83-10.3V189.1c0-5.72,6.14-10.3,13.83-10.3h68.02
-	c7.59,0,13.83-4.58,13.83-10.3v-11.65C187.37,151.24,181.23,146.67,173.54,146.67z"/>
-<path class="st7" d="M153.11,261.6c7.59,0,13.83-4.58,13.83-10.3v-6.97c0-5.72-6.14-10.3-13.83-10.3h-24.23v27.56h24.23V261.6z"/>
+<text transform="matrix(1.0376 0 0 1 125.9711 284.6742)" class="st3 st4 st5">BIKE</text>
+<path class="st6" d="M84.23,146.56H73.35c-13.2,0-23.96,8.84-23.96,19.87v157.88c0,11.02,10.78,19.87,23.96,19.87h4.77"/>
+<path class="st0" d="M75.67,344.99h3.93h84.74c7.59,0,13.83-4.58,13.83-10.3v-6.97c0-5.72-6.14-10.3-13.83-10.3h-60.12
+	c-7.59,0-13.83-4.58-13.83-10.3v-34.63c0-5.72,6.14-10.3,13.83-10.3h6.55v-27.46h-6.55c-7.59,0-13.83-4.58-13.83-10.3V189.8
+	c0-5.72,6.14-10.3,13.83-10.3h68.02c7.59,0,13.83-4.58,13.83-10.3v-11.65c0.12-5.61-6.02-10.18-13.71-10.18H80.93"/>
+<ellipse class="st6" cx="45.84" cy="259.68" rx="11" ry="38.65"/>
+<rect x="78.08" y="146.39" class="st7" width="3.4" height="5.02"/>
+<rect x="72.18" y="340.99" class="st7" width="3.49" height="3"/>
+<polygon class="st3" points="78,344.37 72.1,344.17 72.1,343.99 78,343.99 "/>
+<rect x="70.68" y="342.41" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -270.3091 414.8485)" class="st3" width="3.17" height="0.34"/>
+<path class="st6" d="M447.37,287.64c10.02,9.31,16.29,22.6,16.29,37.35c0,28.15-22.82,50.97-50.97,50.97c-1.87,0-3.73-0.1-5.55-0.3"
+	/>
+<path class="st0" d="M408.68,375.66c-25.54-2.76-45.42-24.4-45.42-50.67c0-28.15,22.82-50.97,50.97-50.97
+	c13.4,0,25.59,5.17,34.68,13.62"/>
+<g>
+	<text transform="matrix(1.0361 0 0 1 382.3914 343.995)" class="st3 st4 st8">77</text>
+</g>
+<rect x="445.82" y="281.76" transform="matrix(0.7071 0.7071 -0.7071 0.7071 333.9527 -232.8842)" class="st6" width="4.54" height="9.83"/>
+<ellipse class="st9" cx="409.65" cy="375.9" rx="1.42" ry="4.53"/>
+<rect x="403.8" y="370.89" class="st3" width="1.15" height="11.05"/>
+<rect x="404" y="380.77" transform="matrix(0.7602 0.6496 -0.6496 0.7602 345.5543 -171.7713)" class="st6" width="2.98" height="2.98"/>
 </svg>
